@@ -1,0 +1,16 @@
+% Put acronyms, units and constants in 1 chapter
+
+\chapter{Nomenclature}
+\label{front:nomenclature}
+
+% print acronyms (only the ones that are refered to in the text)
+\printglossary[type=acronym, style=long-name-desc-loc]
+
+\renewcommand*{\glsgroupskip}{} % no vertical indent for each new group, doesnt seem to work, hence all constants start with c: and all units start with u:
+
+\printglossary[type=constants, style=long-name-desc-sym] % adding constants is optional
+\printglossary[type=units, style=long-name-desc-sym] % adding units is optional
+
+% Add all constants and units to the tables
+\glsaddall[types=constants] % optional
+\glsaddall[types=units] % optional

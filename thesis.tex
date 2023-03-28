@@ -1,0 +1,97 @@
+% This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/ or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
+
+% language options: dutch and english - put in tips and tricks
+% pass msc for master thesis and bsc for bachelor thesis
+% page options: oneside for digital version, twoside for print version
+\documentclass[english, msc, oneside]{layout/observatory-thesis}
+
+\usepackage{lipsum} % only need this for the text example
+\usepackage{blindtext} % only need for text example
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Load acronyms and symbols %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\makeglossaries
+\input{glossaries/custom_units} % load custom defined units -add to tips and tricks
+\input{glossaries/gls-acronyms}
+\input{glossaries/gls-constants}
+\input{glossaries/gls-units}
+\makeglossaries
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Start of the document %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%% Define parameters %%
+%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{The Title of your Thesis}
+\subtitle{With a matching catchy subtitle} % optional, comment this line if not applicable
+\subject{\thesistypeshort thesis} % optional, comment this line if not applicable
+\author{Firstname Lastname}
+\studentid{s1234567}
+\supervisor{Dr. S. Upervisor}
+\secondsupervisor{Supervi Sor} % optional, comment this line if not applicable
+\corrector{Prof. C.O.R. Rector}
+\projectstart{Month 2022}
+\projectend{Month 2023}
+\affiliation{Leiden Observatory, Leiden University}
+\address{P.O. Box 9513, 2300 RA Leiden, The Netherlands}
+\coverimage{layout/figures/free_frontpage/night-sky_Evgeni_Tcherkasski.jpg}
+\covercredit{Night sky by Evgeni Tcherkasski} % Note that for all the images in layout/figures/free_frontpage no credit or reference is required, but I recommend giving credit regardless.
+
+% You can overwrite the logo with any of the UL versions in the leidenuniv_logos folder
+%\affiliationlogo{layout/figures/leidenuniv_logos/Observatory_diapositive.pdf}
+
+
+%%%%%%%%%%%%%%%%%
+%% Frontmatter %%
+%%%%%%%%%%%%%%%%%
+
+\frontmatter % uses roman page numbering and 'frontmatter' style
+
+\makecover % Create cover page
+\maketitle % Create titlepage
+
+% Frontmatter contents
+\input{frontmatter/abstract}
+\input{frontmatter/acknowledgements.tex}
+\tableofcontents
+\listoftables
+\listoffigures
+\input{frontmatter/nomenclature.tex}
+
+%\cleardoublepage
+
+%%%%%%%%%%%%%%%%
+%% Mainmatter %%
+%%%%%%%%%%%%%%%%
+
+\mainmatter % initiates arabic page numbering and 'mainmatter' style
+
+% Input chapters
+\input{mainmatter/1-Template}
+\input{mainmatter/2-Tips}
+\input{mainmatter/3-Showcase}
+
+
+%%%%%%%%%%%%%%
+%% Appendix %%
+%%%%%%%%%%%%%%
+
+\appendix % initiate roman chapter numbering
+
+% Appendices
+\input{appendix/appendix_script}
+
+% Bibliography
+\bibliographystyle{layout/aasjournal}
+\bibliography{bib}
+\end{document}

@@ -1,0 +1,179 @@
+%%%%%%%%%%%UNITS%%%%%%%%%%%%%
+\renewcommand{\glslongextraSymbolAlign}{l}
+
+%% Important note: symbol = unit
+%% Add units to list of units %%
+
+% test with using \si command inside symbol environment
+
+
+\glsxtrnewsymbol
+    [type=units,
+    description={specific intensity},
+    symbol={\si{\unit{J.s^{-1}.Hz^{-1}.m^{-2}.sr^{-1}}}}]
+    {u:specradiancehz} % label (and sort value)
+    {\ensuremath{\mathrm{I}_\nu}} % symbol
+  
+\glsxtrnewsymbol
+    [type=units,
+    description={specific intensity},
+    symbol={\si{\unit{J.s^{-1}m^{-3}.sr^{-1}}}}]
+    {u:specradiance} % label (and sort value)
+    {\ensuremath{\mathrm{I}_\lambda}} % symbol  
+  
+\glsxtrnewsymbol
+    [type=units,
+    description={intensity},
+    symbol={\si{\unit{J.s^{-1}.m^{-2}.sr^{-1}}}}]
+    {u:radiance} % label (and sort value)
+    {\ensuremath{\mathrm{I}}} % symbol
+    
+\glsxtrnewsymbol
+    [type=units,
+    description={spectral flux},
+    symbol={\si{\unit{J.s^{-1}.Hz^{-1}.m^{-2}}}}]
+    {u:specfluxhz} % label (and sort value)
+    {\ensuremath{\mathrm{F}_\nu}} % symbol    
+
+\glsxtrnewsymbol
+    [type=units,
+    description={spectral flux},
+    symbol={\si{\unit{J.s^{-1}.m^{-3}}}}]
+    {u:specflux} % label (and sort value)
+    {\ensuremath{\mathrm{F}_\lambda}} % symbol   
+
+\glsxtrnewsymbol
+    [type=units,
+    description={flux},
+    symbol={\si{\unit{J.s^{-1}.m^{-2}}}}]
+    {u:flux} % label (and sort value)
+    {\ensuremath{\mathrm{F}}} % symbol    
+
+\glsxtrnewsymbol
+    [type=units,
+    description={luminosity},
+    symbol={\si{\unit{J.s^{-1}}}}]
+    {u:lum} % label (and sort value)
+    {\ensuremath{\mathrm{L}}} % symbol    
+
+\glsxtrnewsymbol
+    [type=units,
+    description={\r{A}ngstr\"{o}m},
+    symbol={\si{\num{e-10}\unit{m}}}]
+    {u:angstrom} % label (and sort value)
+    {\si\angstrom} % symbol
+    
+\glsxtrnewsymbol
+    [type=units,
+    description={parsec},
+    symbol={\si{\num{3.086e16}\unit{m}}}]
+    {u:parsec} % label (and sort value)
+    {\si\parsec} % symbol
+    
+\glsxtrnewsymbol
+    [type=units,
+    description={astronomical unit},
+    symbol={\si{\num{1.496e11}\unit{m}}}]
+    {u:au} % label (and sort value)
+    {\si\au} % symbol
+
+\glsxtrnewsymbol
+    [type=units,
+    description={opacity},
+    symbol={\si{\unit{m^2.kg^{-1}}}}]
+    {u:opacity} % label (and sort value)
+    {\ensuremath{\kappa}}% symbol
+
+%% SOLAR UNITS
+\glsxtrnewsymbol
+    [type=units,
+    description={solar mass},
+    symbol={\si{\num{1.988e30}\unit{kg}}}]
+    {u:msun} % label (and sort value)
+    {\si\msun}
+  
+\glsxtrnewsymbol
+    [type=units,
+    description={solar radius},
+    symbol={\si{\num{6.957e8}\unit{m}}}]
+    {u:rsun} % label (and sort value)
+    {\si\rsun}
+
+\glsxtrnewsymbol
+    [type=units,
+    description={solar luminosity},
+    symbol={\si{\num{3.828e26}\unit{J.s^{-1}}}}]
+    {u:lsun} % label (and sort value)
+    {\si\lsun}
+ 
+%% EARTH UNITS
+\glsxtrnewsymbol
+    [type=units,
+    description={Earth mass},
+    symbol={\si{\num{5.972e24}\unit{kg}}}]
+    {u:mearth} % label (and sort value)
+    {\si\mearth}
+  
+\glsxtrnewsymbol
+    [type=units,
+    description={Earth radius},
+    symbol={\si{\num{6.378e6}\unit{m}}}]
+    {u:rearth} % label (and sort value)
+    {\si\rearth}
+
+%% JUPITER UNITS
+\glsxtrnewsymbol
+    [type=units,
+    description={Jupiter mass},
+    symbol={\si{\num{1.898e27}\unit{kg}}}]
+    {u:mjup} % label (and sort value)
+    {\si\mjup}
+  
+\glsxtrnewsymbol
+    [type=units,
+    description={Jupiter radius},
+    symbol={\si{\num{7.149e7}\unit{m}}}]
+    {u:rjup} % label (and sort value)
+    {\si\rjup}  
+    
+\glsxtrnewsymbol
+    [type=units,
+    description={arcsecond},
+    symbol={\si{\frac{1}{3600}\unit{\degree}}}]
+    {u:arcsecond} % label (and sort value)
+    {\si\arcsecond}
+
+\glsxtrnewsymbol
+    [type=units,
+    description={arcminute},
+    symbol={\si{\frac{1}{60}\unit{\degree}}}]
+    {u:arcminute} % label (and sort value)
+    {\si\arcminute}
+
+\glsxtrnewsymbol
+    [type=units,
+    description={milliarcsecond},
+    symbol={\si{\num{0.001}\unit{\arcsecond}}}]
+    {u:mas} % label (and sort value)
+    {\si\mas}
+
+\glsxtrnewsymbol
+    [type=units,
+    description={billion years (gigayear)},
+    symbol={\si{\num{1e9}\unit{year}}}]
+    {u:gyr} % label (and sort value)
+    {\ensuremath{\mathrm{Gyr}}}
+
+\glsxtrnewsymbol
+    [type=units,
+    description={electronvolt},
+    symbol={\si{\num{1.602e-19}\unit{\joule}}}]
+    {u:ev} % label (and sort value)
+    {\si\electronvolt}
+
+\glsxtrnewsymbol
+    [type=units,
+    description={density},
+    symbol={\si{}\unit{kg.m^{-3}}}]
+    {u:dichtheid} % label (and sort value)
+    {\ensuremath{\rho}}

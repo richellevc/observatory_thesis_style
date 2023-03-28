@@ -1,0 +1,39 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Add custom commands %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\tsub}{\textsubscript}
+\newcommand{\tsup}{\textsuperscript}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Add custom units (symbols) to siunitx package %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\QQ#1#2{\frac{\partial^2 #1}{\partial #2^2}}
+% double partial derivative
+
+%%%% PHYSICS / GENERAL %%%%
+\DeclareSIUnit\rad{\ensuremath{\mathrm{rad}}}
+\DeclareSIUnit\elementarycharge{\ensuremath{e}}                     % redefine deprecated unit
+\DeclareSIUnit\clight{\text {\ensuremath {c}}_{0}}                  % redefine deprecated unit
+\DeclareSIUnit\electronmass{\text {\ensuremath {m}}_{\mathrm {e}}}  % redefine deprecated unit
+%%%% ASTRONOMY %%%%
+%\DeclareSIUnit\angstrom{\ensuremath{\textup{\AA}}}
+\DeclareSIUnit\angstrom{\ensuremath{ \mathrm{{\AA}}}}
+\DeclareSIUnit\parsec{\ensuremath{\mathrm{pc}}}
+\DeclareSIUnit\au{\ensuremath{\mathrm{AU}}}
+\DeclareSIUnit\mas{\ensuremath{\mathrm{mas}}}
+
+%% Sun %%
+\DeclareSIUnit\msun{{M\ensuremath{_\odot}}}
+\DeclareSIUnit\rsun{{R\ensuremath{_\odot}}}
+\DeclareSIUnit\lsun{{L\ensuremath{_\odot}}}
+
+
+%% Earth %%
+\DeclareSIUnit\mearth{{M\ensuremath{_\oplus}}}
+\DeclareSIUnit\rearth{{R\ensuremath{_\oplus}}}
+\DeclareSIUnit\learth{{L\ensuremath{_\oplus}}}
+
+%% Jupiter %%
+\DeclareSIUnit\mjup{{M\ensuremath{_\mathrm{J}}}}
+\DeclareSIUnit\rjup{{R\ensuremath{_\mathrm{J}}}}
+\DeclareSIUnit\ljup{{L\ensuremath{_\mathrm{J}}}}

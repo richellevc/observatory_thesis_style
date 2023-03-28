@@ -1,0 +1,32 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Chapter 1: Tips and Tricks %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Tips and tricks}
+\label{chap:tips}
+This chapter contains some tips and tricks for using this template. \Cref{sec:tips_template} contains tips and tricks specific to this template, and \cref{sec:tips_packages} contains useful info on some of the packages used by this template.
+\section{Template}
+\label{sec:tips_template}
+\begin{itemize}
+    \item At the top of the \textit{thesis.tex} file you can change the language passed to \textit{documentclass}. When changing this to Dutch, the nomenclature titles and Leiden University logos will also be changed to the Dutch versions.
+    \item For a bachelor thesis, pass bsc instead of msc to \textit{documentclass}.
+    \item You can change parameters such as author, supervisors and coverimage right after the start of the document in \textit{thesis.tex}.
+    \item The logo's are defined in \textit{layout/observatory-thesis.cls}, with \textbackslash coveraffiliationlogo  for the logo on the coverpage, and \textbackslash affiliationlogo for the logo on the titlepage. Note that the current logo on the coverpage is the diapositive version; if your coverimage is lighter, use the normal logo instead.
+    \item Folder \textit{layout/figures/free\_frontpage} contains some other free frontpage images that don't require credit (although I do advocate giving credit regardless). You can remove unused images to save space.
+    \item There are additional caption settings available. When defining a caption, you can use \textbackslash caption[short caption]\{long caption\}. The short caption will be listed in the list of figures or list of tables at the start of the document, and the long caption will be shown below the figure or above the table. Use \textbackslash imref\{\} to add an image credit entry below the caption, as shown in \cref{fig:prettypicture} and \cref{fig:NGC1300}.
+    \item If you want to print your thesis, you can pass \textit{twoside} instead of \textit{oneside} to \textit{documentclass} in \textit{thesis.tex}. This will make the inner margin bigger than the outer margin, ensure all chapters start at the left page, and display the chapter title at the top of the left page and the section title at the top of the right page.
+    \item If you input chapters (or even sections) separately, you can comment out the \textit{\textbackslash include} of the chapters you are currently not editing to make the document compile faster.
+    \item This template uses the AASTeX bibliography style, see \cref{sec:acr_refs} for examples of citations. All journal abbreviations used in the ADS BibTeX entries are defined at the bottom of the class file. Examples are \textit{\textbackslash aap} ( \aap) and \textit{\textbackslash aap} ( \apj).
+    \item The included bibliography, \textit{bib.bib}, shows more (uncited) examples of sources, such as conference proceedings and unpublished work.
+    \item When you get errors after adding a new entry in your bibliography, it is most commonly caused by a special character in a name, for example é and ö. You can fix this by replacing the character with the corresponding latex encoding, in this case \textbackslash'\{e\} and \textbackslash"\{o\} respectively.
+\end{itemize}
+
+\section{Packages}
+\label{sec:tips_packages}
+\begin{itemize}
+     \item This template includes the \texttt{\href{https://ctan.org/pkg/cleveref}{cleveref}} package, which has advantages over the the normal \textbackslash ref. The commands of this package are \textbackslash cref and \textbackslash Cref. When using this, it will automatically include the word of whatever it is you are referring to before the number (such as chapter, section, appendix, table, figure). This way you don't have to worry about manually changing all the references when you change the structure of your thesis by for example changing a chapter into a section.
+    \item The package \texttt{\href{https://ctan.org/pkg/siunitx}{siunitx}} includes many useful features for displaying (scientific) numbers and units. You can also define your own custom units; some astronomy units have already been added in \textit{glossaries/custom\_units.tex}.
+    \item This template uses the packages \texttt{\href{https://ctan.org/pkg/glossaries}{glossaries}} and \texttt{\href{https://ctan.org/pkg/glossaries-extra}{glossaries-extra}}. It is set up such that it automatically creates a table with acronyms, constants and units. You can find these after the list of figures and list of tables. You can see how the acronyms, constants and units are defined in  \textit{glossaries/acronyms.tex}, \textit{glossaries/units.tex} and \textit{glossaries/constants.tex} respectively, such that you can add new ones yourself. \Cref{sec:acr_refs} shows various ways to use the acronyms in your text. All of these are clickable and will take you to the corresponding table at the start of the document.
+    \item You don't want acronyms in titles or in captions to be clickable. Always use \textbackslash glsfmtshort and \textbackslash glsfmtlong for the acronym and the full word respectively.
+    \item This class includes package \texttt{adjustbox}, which allows figures to float outside the page margins whilst remaining centered. Although for aesthetics it is not recommended to do this, if you see no other way to include your figure in a clearly readable way, you can make it exceed the margins by using: \textit{\textbackslash includegraphics[width=1.2\textbackslash textwidth, center]\{figures/figuretitle.png\}}
+\end{itemize}
