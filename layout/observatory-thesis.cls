@@ -9,8 +9,8 @@
 \typeout{Unofficial Leiden observatory thesis class, created for Leiden Observatory}
 \typeout{}
 \typeout{Copyright (c) 2023 Richelle F. van Capelleveen}
-\typeout{Please send questions, comments, additions, complaints to:}
-\typeout{rvcapelleveen@outlook.com}
+\typeout{Please submit questions, comments, additions, complaints to:}
+\typeout{https://github.com/richellevc/observatory_thesis_style}
 \typeout{This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/ or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA}
 \typeout{}
 
