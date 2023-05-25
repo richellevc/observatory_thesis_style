@@ -6,7 +6,7 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{layout/observatory-thesis}[2023/03/28 v0.1]
 \typeout{}
-\typeout{Unofficial Leiden observatory thesis class, created for Leiden Observatory}
+\typeout{Official Leiden Observatory thesis class, created for Leiden Observatory}
 \typeout{}
 \typeout{Copyright (c) 2023 Richelle F. van Capelleveen}
 \typeout{Please submit questions, comments, additions, complaints to:}
