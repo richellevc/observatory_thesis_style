@@ -1,2 +1,2 @@
 # observatory_thesis_style
-Unofficial Leiden Observatory thesis style
+Official Leiden Observatory thesis style
