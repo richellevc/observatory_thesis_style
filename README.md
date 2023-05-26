@@ -1,2 +1,2 @@
 # observatory_thesis_style
-Official Leiden Observatory thesis style
+This is the official Leiden Observatory thesis template. It is optimised for writing a Bachelor or Master thesis in Astronomy and contains integrated custom Astronomy units. It supports a cover image, title page, fully automated nomenclature and more. The colour palette is selected around the colour of the Leiden University logo, but all logos are interchangeable. Complete instructions and examples are included in the document. Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
